@@ -78,11 +78,4 @@ public class PriorityQueueTest {
             pq.add(i);
         });
     }
-
-    @Test
-    public void failTest() {
-        assertThrows(NullPointerException.class, () -> {
-            PriorityQueue<Integer> pq = new PriorityQueue<>(0);
-        });
-    }
 }
